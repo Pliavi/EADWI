@@ -1,1 +1,85 @@
-<h1 id="page-title">Inscreva-se!</h1><h2>Como se inscrever</h2><ol> <li>Preencha o formulário abaixo</li><li>Você talvez (ou melhor, não) receberá um email confirmando sua inscrição</li><li>Aguarde eternament o nosso retorno por telefone!</li></ol><h2>Formulário de Inscrição</h2><form class="form" action="index.html" onsubmit="submitValidation()"><div class="form-group"><span class="form-label">Nome: </span><input class="form-input" type="text" name="nome" onblur="validateText(this, 'nome')"/></div><div class="form-group"><span class="form-label">Senha (que não será usada pra nada): </span><input class="form-input" type="password" name="senha"/></div><div class="form-group"><span class="form-label">Sexo:</span><label> <input type="radio" name="sexo" value="M" onchange="validateCheckboxOrRadio(this, this.name)"/>Masculino</label><label> <input type="radio" name="sexo" value="F" onchange="validateCheckboxOrRadio(this, this.name)"/>Feminino</label><label> <input type="radio" name="sexo" value="I" onchange="validateCheckboxOrRadio(this, this.name)"/>Indefinido</label></div><div class="form-group"><span class="form-label">Qual sua cor favorita? (Desculpe, Só temos essas opções)</span><select class="form-input" name="cor"><option>Azul</option><option>Verde</option><option>Vermelho</option></select></div><div class="form-group"><span class="form-label">Quais desses utensílios domésticos há na sua casa? (Selecione pelo menos um)</span><label><input type="checkbox" name="utensilios[]" value="Liquidificador" onclick="validateCheckboxOrRadio(this, this.name)"/>Liquidificador</label><label><input type="checkbox" name="utensilios[]" value="Microondas" onclick="validateCheckboxOrRadio(this, this.name)"/>Microondas</label><label><input type="checkbox" name="utensilios[]" value="Britadeira" onclick="validateCheckboxOrRadio(this, this.name)"/>Britadeira</label></div><div class="form-group"><span class="form-label">Telefone:</span><input class="form-input" type="tel" name="tel" onblur="validateTel(this)" placeholder="(XX)9XXXX-XXXX"/></div><div class="form-group"><span class="form-label">E-Mail:</span><input class="form-input" type="email" name="email" onblur="validateEmail(this)"/></div><div class="form-group"><span class="form-label">Bota umas palavras aí! (a gente não vai ler mesmo):</span><textarea class="form-input"></textarea></div><div class="form-group"><button class="btn block" type="submit">inscrever-se!</button></div></form><h2>Incrições confirmadas</h2><ul><li>Fulano José</li><li>Teste da Silva</li><li>Anônimo da 209</li><li>Um outro carinha aí</li><li>Seja você o próximo!!</li></ul>
+<h1 id="page-title">Inscreva-se!</h1>
+<h2>Como se inscrever</h2>
+<ol>
+    <li>Preencha o formulário abaixo</li>
+    <li>Você talvez (ou melhor, não) receberá um email confirmando sua inscrição</li>
+    <li>Aguarde eternament o nosso retorno por telefone!</li>
+</ol>
+
+<h2>Formulário de Inscrição</h2>
+<form class="form" action="index.html" onsubmit="submitValidation()">
+    <div class="form-group">
+        <span class="form-label">Nome: </span>
+        <input class="form-input" type="text" name="nome" onblur="validateText(this, 'nome')"/>
+    </div>
+    
+    <div class="form-group">
+        <span class="form-label">Senha (que não será usada pra nada): </span>
+        <input class="form-input" type="password" name="senha"/>
+    </div>
+
+    <div class="form-group">
+        <span class="form-label">Sexo:</span>
+        <label>
+            <input type="radio" name="sexo" value="M" onchange="validateCheckboxOrRadio(this, this.name)"/>Masculino
+        </label>
+        <label>
+            <input type="radio" name="sexo" value="F" onchange="validateCheckboxOrRadio(this, this.name)"/>Feminino
+        </label>
+        <label> 
+            <input type="radio" name="sexo" value="I" onchange="validateCheckboxOrRadio(this, this.name)"/>Indefinido
+        </label>
+    </div>
+
+    <div class="form-group">
+        <span class="form-label">Qual sua cor favorita? (Desculpe, Só temos essas opções)</span>
+        <select class="form-input" name="cor">
+            <option>Azul</option>
+            <option>Verde</option>
+            <option>Vermelho</option>
+        </select>
+    </div>
+        
+    <div class="form-group">
+        <span class="form-label">Quais desses utensílios domésticos há na sua casa? (Selecione pelo menos um)</span>
+        <label>
+            <input type="checkbox" name="utensilios[]" value="Liquidificador" onclick="validateCheckboxOrRadio(this, this.name)"/>
+            Liquidificador
+        </label>
+        <label>
+            <input type="checkbox" name="utensilios[]" value="Microondas" onclick="validateCheckboxOrRadio(this, this.name)"/>
+            Microondas
+        </label>
+        <label>
+            <input type="checkbox" name="utensilios[]" value="Britadeira" onclick="validateCheckboxOrRadio(this, this.name)"/>
+            Britadeira
+        </label>
+    </div>
+
+    <div class="form-group">
+        <span class="form-label">Telefone:</span>
+        <input class="form-input" type="tel" name="tel" onblur="validateTel(this)" placeholder="(XX)9XXXX-XXXX" />
+    </div>
+
+    <div class="form-group">
+        <span class="form-label">E-Mail:</span>
+        <input class="form-input" type="email" name="email" onblur="validateEmail(this)"/>
+    </div>
+
+    <div class="form-group">
+        <span class="form-label">Bota umas palavras aí! (a gente não vai ler mesmo):</span>
+        <textarea class="form-input"></textarea>
+    </div>
+    <div class="form-group">
+        <button class="btn block" type="submit">inscrever-se!</button>
+    </div>
+</form>
+
+<h2>Incrições confirmadas</h2>
+<ul>
+    <li>Fulano José</li>
+    <li>Teste da Silva</li>
+    <li>Anônimo da 209</li>
+    <li>Um outro carinha aí</li>
+    <li>Seja você o próximo!!</li>
+</ul>
