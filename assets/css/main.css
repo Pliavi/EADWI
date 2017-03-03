@@ -1,0 +1,187 @@
+/* Alguns Resets (não sabia se poderia o reset.css ou o normalize) */
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border-bottom: 13px solid transparent;
+  border-image: url("../img/border.png") 13;
+  border-image-repeat: repeat;
+}
+body {
+  margin: 10px;
+  font-size: 1.5REM;
+}
+/* CSS */
+body {
+  background: #45818e;
+  font-family: 'Amatic SC', cursive;
+  color: #fff;
+}
+.wrapper {
+  width: 1000px;
+  margin: auto;
+}
+header {
+  text-align: center;
+}
+header .logo {
+  width: 135px;
+}
+header h1 {
+  font-size: 42px;
+  font-family: 'Fredericka the Great', cursive;
+  color: #fff;
+}
+/* Main-Wrapper */
+section.main {
+  display: flex;
+  margin-top: 50px;
+}
+.content {
+  max-width: 800px;
+  min-width: 800px;
+}
+/* Menu lateral */
+aside {
+  border-left: 13px solid transparent;
+  border-image: url("../img/border.png") 13;
+  border-image-repeat: repeat;
+  max-width: 190px;
+  min-width: 190px;
+  margin-left: 10px;
+}
+aside ul {
+  list-style: none;
+  padding: 0 0 0 20px;
+}
+aside ul li a {
+  color: #fff;
+  font-size: 2REM;
+}
+aside ul li a:hover {
+  color: #ffa500;
+}
+/* Conteúdo */
+h1#page-title {
+  margin-top: 0;
+}
+/* Formulário */
+.form-group {
+  margin-bottom: 16px;
+}
+span.form-label {
+  display: block;
+}
+.form {
+  font-size: 20px;
+  padding: 0 12px;
+}
+.form-input {
+  border: 0;
+  background: #9ac5ce;
+  display: block;
+  padding: 6px;
+  border-radius: 4px;
+  width: 100%;
+  height: 18px;
+  box-sizing: content-box;
+  box-shadow: -1px 1px 2px 0 #34616a;
+}
+textarea.form-input {
+  min-height: 80px;
+  resize: vertical;
+}
+/* Rodapé */
+footer {
+  text-align: center;
+  padding-top: 10px;
+}
+/* Botão */
+button.btn {
+  background: #68a8b6;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px;
+  color: #fff;
+  font-family: cursive;
+  text-transform: uppercase;
+  box-shadow: -1px 1px 2px 0 #34616a;
+  outline: 0;
+  position: relative;
+}
+button.btn:hover {
+  background: #549cac;
+}
+button.btn:active {
+  box-shadow: inset -1px 1px 2px 0 #34616a;
+  background: #5ea2b1;
+  top: 2px;
+}
+button.btn.block {
+  display: block;
+  width: 250px;
+}
+/* Tabela */
+.fluid-table {
+  max-width: 100%;
+  overflow-x: scroll;
+  padding: 5px;
+}
+table {
+  border: 0;
+  border-collapse: collapse;
+}
+table tr:nth-child(2n) {
+  background: #3e7480;
+}
+table thead tr,
+table tbody th {
+  background: #3b6e79 !important;
+}
+table th {
+  padding: 0 10px;
+}
+table .xis {
+  text-align: center;
+}
+/* Mensagem de erro */
+.fail-message {
+  color: #ffa500;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 10px;
+}
+/* Placeholder */
+::-webkit-input-placeholder {
+  opacity: 0.5;
+  color: #000;
+}
+:-moz-placeholder {
+  opacity: 0.5;
+  color: #000;
+}
+::-moz-placeholder {
+  opacity: 0.5;
+  color: #000;
+}
+:-ms-input-placeholder {
+  opacity: 0.5;
+  color: #000;
+}
+::-ms-input-placeholder {
+  opacity: 0.5;
+  color: #000;
+}
